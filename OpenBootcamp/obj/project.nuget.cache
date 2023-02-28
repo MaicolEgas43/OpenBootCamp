@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "qPbA9ldciGlqYEE4Gg34O3qUbgurWmocq2zuSMBfLCjnxvS4PsP5QIIoSAItaORl2F3WLCliJ4PeD4kYPFsN4g==",
+  "dgSpecHash": "IqAJ/Jm9QvwjtlIjlHgbEGn1m3+jUXteMxcRa++NnvHWBsfKXxpxxQfE3hYyxc4cOcG3Ga1BpknMxSCSfHt2Qg==",
   "success": true,
   "projectFilePath": "C:\\Users\\57315\\source\\repos\\OpenBootcamp\\OpenBootcamp\\OpenBootcamp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\57315\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512"
+  ],
   "logs": []
 }

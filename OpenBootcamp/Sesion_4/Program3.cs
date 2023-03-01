@@ -1,6 +1,6 @@
 ﻿namespace MiPrograma
 {
-    class Program1
+    class Program3
     {
         static void Main(string[] args)
         {

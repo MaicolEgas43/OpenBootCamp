@@ -2,7 +2,7 @@
 
 namespace OpenBootcamp.Sesion_5
 {
-    class Program
+    class Program2
     {
         static void Main(string[] args)
         {

@@ -1,37 +1,55 @@
-﻿namespace OpenBootcamp
+﻿using System;
+
+namespace OpenBootcamp.Sesion_5
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Ingresar nombre");
-            var name = Console.ReadLine();
-
-            Console.WriteLine("Ingresar email");
-            var email = Console.ReadLine();
-
-            Console.WriteLine("Tienes un cupon: 1 si / 0 no ");
-            var tieneCupon = Convert.ToInt32(Console.ReadLine());
-
-
-            Console.WriteLine("Ingresar tu cupon");
-            var cupon = Console.ReadLine();
-
-            Console.WriteLine("Ingresar valor del producto");
-            var producto = Convert.ToInt32(Console.ReadLine());
-
-            if(tieneCupon == 0)
+            List<string> lenguajesProgramation = new List<string>() { "1. Java", "2. Python", "3. C#", "4. C", "5. Javascript" };
+            Console.WriteLine("Elige un lenguaje de programacion. ");
+            foreach (var item in lenguajesProgramation)
             {
-                Console.WriteLine("No tienes cupon de descuento, por lo tanto el precio del producto es: ", producto);
+                Console.WriteLine($"{item}");
             }
-            else
+             var opcion = Convert.ToInt32(Console.ReadLine());
+
+            switch (opcion)
             {
-                Console.WriteLine($"El cupon {cupon} si fue aplicado");
-                Console.WriteLine($"Por lo tanto el precio del producto es: {(producto - (producto * .10))}");
-
-
+                case 1:
+                    Console.WriteLine("En Java se escribe un hola mundo de la siguente forma: ");
+                    Console.WriteLine("Class Program {");
+                    Console.WriteLine(" public void main(string[] args) {");
+                    Console.WriteLine("    System.out.println(\"Hola mundo \");");
+                    Console.WriteLine("  }");
+                    Console.WriteLine("}");
+                    break;
+                case 2:
+                    Console.WriteLine("En Python se escribe un hola mundo de la siguente forma: ");
+                    Console.WriteLine("print(Hola Mundo)");
+                    break;
+                case 3:
+                    
+                    Console.WriteLine("En C# se escribe un hola mundo de la siguente forma: ");
+                    Console.WriteLine("Class Program {");
+                    Console.WriteLine(" static void main(string[] args) {");
+                    Console.WriteLine("    Console.WriteLine(\"Hola mundo \");");
+                    Console.WriteLine("  }");
+                    Console.WriteLine("}");
+                    break;
+                case 4:
+                    Console.WriteLine("En C se escribe un hola mundo de la siguente forma: ");
+                    Console.WriteLine("# include <stdio.h>");
+                    Console.WriteLine("int main(){");
+                    Console.WriteLine(" printf(\"Hola, mundo!\\n\");");
+                    Console.WriteLine("return 0;");
+                    Console.WriteLine("}");
+                    break;
+                default:
+                    Console.WriteLine("En JavaScript se escribe un hola mundo de la siguente forma: ");
+                    Console.WriteLine("console.log(\"Hola, mundo\");");
+                    break;
             }
-
 
         }
     }
